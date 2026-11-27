@@ -3,13 +3,19 @@
 		{
 			"item_id": 1,
 			"item_name": "Item 1",
-			"item_category": "Common",
+			"item_category": [
+				"Category 1 (e.g. rarity)",
+				"Category 2 (e.g. season)"
+			],
 			"bot_emoji_id": "1575925237294432429"
 		},
 		{
 			"item_id": 2,
 			"item_name": "Item 2",
-			"item_category": "Rare",
+			"item_category": [
+				"Category 1 (e.g. rarity)",
+				"Category 2 (e.g. season)"
+			],
 			"bot_emoji_id": "1575925178129715271"
 		}
 	]
