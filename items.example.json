@@ -1,0 +1,16 @@
+{
+	"items": [
+		{
+			"item_id": 1,
+			"item_name": "Item 1",
+			"item_category": "Common",
+			"bot_emoji_id": "1575925237294432429"
+		},
+		{
+			"item_id": 2,
+			"item_name": "Item 2",
+			"item_category": "Rare",
+			"bot_emoji_id": "1575925178129715271"
+		}
+	]
+}

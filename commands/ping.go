@@ -1,0 +1,12 @@
+package commands
+
+import (
+	"github.com/disgoorg/disgo/discord"
+	"github.com/disgoorg/disgo/handler"
+)
+
+func PingCommandHandler(data discord.SlashCommandInteractionData, e *handler.CommandEvent) error {
+	return e.CreateMessage(discord.MessageCreate{
+		Content: "Pong!",
+	})
+}
