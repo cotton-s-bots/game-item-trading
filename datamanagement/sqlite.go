@@ -1,0 +1,5 @@
+package datamanagement
+
+func InitDB() {
+
+}

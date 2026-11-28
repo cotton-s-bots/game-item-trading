@@ -9,6 +9,7 @@ import (
 	"time"
 
 	"tradingBot/commands"
+	dm "tradingBot/datamanagement"
 
 	// Import DisGo packages
 	"github.com/disgoorg/disgo"
@@ -21,6 +22,7 @@ import (
 )
 
 func main() {
+	dm.ParseIndexJson()
 	_ = godotenv.Load()
 	h := handler.New()
 
@@ -49,6 +51,8 @@ func main() {
 	}
 
 	h.SlashCommand("/ping", commands.PingCommandHandler)
+	h.SlashCommand("/collection", commands.CollectionCommandHandler)
+	h.SlashCommand("/syncjson", commands.SyncJSONCommandHandler)
 	if err := handler.SyncCommands(client, commands.Commands, []snowflake.ID{guildID}); err != nil {
 		panic(err)
 	}
